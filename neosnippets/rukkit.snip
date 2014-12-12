@@ -1,3 +1,13 @@
+# plugin template
+snippet module_plugin_template
+abbr Rukkit pluginのモジュールテンプレート
+	module `expand('%:t:r:gs?\%(^\|_\)\(\w\)?\U\1?')`
+		extend self
+		extend Rukkit::Util
+
+		${0}
+	end
+
 # Event
 snippet on_block_break
 abbr ブロックが壊れる時
